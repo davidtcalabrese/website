@@ -2,7 +2,7 @@
 <!--                         ___
                          __/_  `.  .-"'"-.
 Author: David Calabrese \_,` | \-'  /   )`-')
-Date: 08/22/2021         "") `"` DC  \  ((`"`
+Date: 08/28/2021         "") `"` DC  \  ((`"`
                         ___Y  ,    .'7 /|
                       (_,___/...-` (_/_/ -->
 <html lang='en'>
@@ -19,10 +19,99 @@ Date: 08/22/2021         "") `"` DC  \  ((`"`
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous" defer></script>
         <!-- bootstrap's js plugins -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" defer></script>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- font awesome icons -->
+        <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script>
         <script src='script.js' defer></script>
         <title>David Calabrese | Web Developer | Personal Website</title>
     </head>
+
     <body>
-      <h1>David Calabrese's Personal Website</h1>
+
+      <nav class="top-nav">
+        <ul class="nav-items">
+          <li><a href="#" class="nav-item">home</a></li>
+          <li><a href="#" class="nav-item">resume</a></li>
+          <li><a href="#" class="nav-item">projects</a></li>
+          <li><a href="#" class="nav-item">about</a></li>
+          <li><a href="#" class="nav-item">photos</a></li>
+        </ul>
+        </nav>
+
+        <header>
+
+          <div class="center">
+            <img class="propic" src="img/profile-pic-circle.png" alt="">
+            <div class="name-container">
+              <h1>David Calabrese</h1>
+            </div>
+            <h2>Software Developer</h2>
+          </div>
+        </header>
+
+        <main class="container">
+          <section class="cards">
+            <article class="card">
+              <a href="#">
+                  <picture class="thumbnail">
+                      <img src="img/corbusier.png" alt="arch">
+                  </picture>
+                  <div class="card-content">
+                      <h2>De Stilj</h2>
+                      <p>De Stilj is Dutch for "The Style". Proponents of De Stilj advocated pure abstraction and universality by a reduction to the essentials of form and color. In software, a universal design aethetic speaks to a wide audience.</p>
+                  </div><!-- .card-content -->
+              </a>
+            </article><!-- .card -->
+
+
+            <article class="card">
+              <a href="#">
+                  <picture class="thumbnail">
+                      <img src="img/keith-haring.png" alt="arch">
+                  </picture>
+                  <div class="card-content">
+                      <h2>Just for Fun</h2>
+                      <p>These people in the Frank Haring painting are having fun. I believe that having fun is important. I also like to work hard, and I find I work hardest when I'm having fun. Check out some of the projects I've done "just for" fun.</p>
+                  </div><!-- .card-content -->
+              </a>
+            </article><!-- .card -->
+
+
+            <article class="card">
+              <a href="#">
+                  <picture class="thumbnail">
+                      <img src="img/de_stijl_6.jpg" alt="arch">
+                  </picture>
+                  <div class="card-content">
+                      <h2>Design</h2>
+                      <p>This is kind of a neat design, don't you think? Straight lines, basic shapes, simple colors. A strong sense of symmetry, balance and cohesion.  Very simple, yet elegant, like well-designed software.</p>
+                  </div><!-- .card-content -->
+              </a>
+            </article><!-- .card -->
+
+          </section>
+         
+     
+        <footer>
+
+          <div class="social">
+            <a href="https://www.linkedin.com/in/david-calabrese-6828731a3/">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/davidtcalabrese" target="_blank" rel="noreferrer noopener"> 
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/david.calabrese.334/">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/cuentodenada1">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </div>
+        </footer>
+      </main>
     </body>
 </html>
