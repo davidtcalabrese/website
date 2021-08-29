@@ -22,6 +22,11 @@ h1, h2 {
 
 
 /*-------------------- nav styles --------------------*/
+nav {
+  display: flex;
+  justify-content: center;
+}
+
 nav ul {
   width: 100%;  display: flex;
   justify-content: center;
