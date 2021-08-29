@@ -132,7 +132,7 @@ footer {
   bottom: 0;
 }
 .social {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .social a {
@@ -144,7 +144,7 @@ footer {
 }
 .social i {
   color: #0000e4;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .social i:hover {
