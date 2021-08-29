@@ -148,11 +148,12 @@ footer {
 }
 
 .social i:hover {
-  color: #07e41a;
+  color: #f3e304;
 }
 
 .social i:active {
-  color: #fefe00;
+  color: #07e41a;
+
 }
 
 
