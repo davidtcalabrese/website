@@ -110,7 +110,10 @@ main {
 }
 
 picture img {
-  width: 400px;
+  width: 100%;
+  display: block;
+  border: 0;
+  height: auto;
 }
 
 /*-------------------- footer styles --------------------*/
