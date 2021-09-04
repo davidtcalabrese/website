@@ -1,3 +1,9 @@
+:root {
+  --mondrian-yellow: #fac901;
+  --mondrian-red: #dd0100;
+  --mondrian-blue: #225095;
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -27,9 +33,33 @@ nav {
   justify-content: center;
 }
 
-nav ul {
+.navbar {
+  font-size: 1.125rem;
+}
+
+.nav-items {
   width: 100%;  display: flex;
   justify-content: center;
+  display: none;
+  /* visibility: hidden; */
+  margin: 0 auto;
+  margin: 1em;
+  padding-right: 2em
+}
+
+.nav-items.active { 
+  display: block; 
+}
+
+.nav-items li {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-items li:hover {
+  background-color: var(--shrub-green);
+  transition: 0.3s;
 }
 
 nav li {
@@ -37,25 +67,46 @@ nav li {
   float: left;
 }
 
-.nav-items {
-  margin: 0 auto;
-  margin: 1em;
-  padding-right: 2em
-}
-
 nav li a {
   display: block;
   padding: 16px;
   letter-spacing: 2px;
   text-decoration: none;
+  color: var(--mondrian-blue)
 }
 
 nav li a:hover {
-  border-bottom: black 1px solid;
+  border-bottom: var(--mondrian-yellow) 1px solid;
   margin-bottom: -1px;
+  color: var(--mondrian-red);
 }
 
+/* .navbar-toggle is div holding hamburger icon, not icon itself */
+.navbar-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  /* color: rgba(255 255 255 / 0.7); */
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  font-size: 2rem;
+}
 
+.navbar-toggle:hover {
+  background-color: var(--mondrian-blue);
+  border-radius: 0;
+}
+
+.fa-bars { transition: transform .3s ease-in;  }
+.fa-bars:hover { transform: rotate(-90deg); }
+
+/*--- box with name, title and picture -----*/
 .center {
   margin: 2em;
   padding: 2em;
@@ -68,8 +119,6 @@ nav li a:hover {
 
 
 /*-------------------- body styles --------------------*/
-
-
 main {
   display: flex;
   align-items: center;
@@ -83,7 +132,6 @@ main {
 .cards {
   padding-bottom: 2.5rem;
 }
-
 
 .card {
 	background: white;
@@ -131,6 +179,7 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
 .social {
   margin-bottom: 3em;
 }
@@ -142,13 +191,14 @@ footer {
 .social a:hover {
   color: #fff;
 }
+
 .social i {
-  color: #0000e4;
+  color: var(--mondrian-blue);
   margin: 0 20px;
 }
 
 .social i:hover {
-  color: #f3e304;
+  color: var(--mondrian-yellow);
 }
 
 .social i:active {
@@ -156,9 +206,28 @@ footer {
 
 }
 
-
 /*-------------------- media queries --------------------*/
+/* 640 px */
 @media screen and (min-width: 40em) {
+  .navbar { display: flex; }
+  .navbar-toggle { visibility: hidden; }
+  .nav-items {
+    visibility: visible;
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-items li {
+    /* display: inline-block; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-items li a { letter-spacing: 0.08rem; }
+
+
+
   .cards {
       display: flex;
       flex-wrap: wrap;
@@ -172,7 +241,7 @@ footer {
       margin-bottom: 1em;
   }
 }
-
+/* 960 px */
 @media screen and (min-width: 60em) {
   .cards {
       margin-top: inherit;
