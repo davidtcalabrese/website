@@ -18,8 +18,6 @@ h1, h2 {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
 p a:link {
   text-decoration: none;
   color: var(--mondrian-red);
@@ -36,7 +34,6 @@ p a:hover {
 p a:active {
   color: var(--mondrian-black);
 } 
-
 
 /*-------------------- nav styles --------------------*/
 nav {
@@ -81,9 +78,6 @@ nav li a {
   color: var(--mondrian-blue);
   padding: 4px;
 }
-
-
-
 
 nav li a:hover {
   border-bottom: var(--mondrian-red) 1px solid;
