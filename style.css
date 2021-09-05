@@ -218,7 +218,7 @@ footer {
 }
 
 .social i:active {
-  color: #07e41a;
+  color: var(--mondrian-red);
 
 }
 
