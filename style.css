@@ -2,7 +2,7 @@
   --mondrian-yellow: #fac901;
   --mondrian-red: #dd0100;
   --mondrian-blue: #225095;
-  --mondrian-blue-alpha: rgba(34 80 149 / .1);
+  --mondrian-blue-alpha: rgba(34 80 149 / .08);
   --mondrian-white: #f9f9f9;
   --mondrian-black: #30303a;
 }
@@ -19,24 +19,43 @@ h1, h2 {
 }
 
 
+
+p a:link {
+  text-decoration: none;
+  color: var(--mondrian-red);
+}
+
+p a:visited {
+  color:var(--mondrian-yellow);
+}
+
+p a:hover {
+  color: var(--mondrian-blue);
+}
+
+p a:active {
+  color: var(--mondrian-black);
+} 
+
+
 /*-------------------- nav styles --------------------*/
 nav {
   display: flex;
   justify-content: center;
 }
 
-.navbar {
+nav.navbar {
   font-size: 1.125rem;
+  padding: 0;
 }
 
 .nav-items {
   width: 100%;  display: flex;
   justify-content: center;
   display: none;
-  /* visibility: hidden; */
   margin: 0 auto;
   margin: 1em;
-  padding-right: 2em
+  padding-right: 2em;
 }
 
 .nav-items.active { 
@@ -59,8 +78,12 @@ nav li a {
   padding: 16px;
   letter-spacing: 2px;
   text-decoration: none;
-  color: var(--mondrian-blue)
+  color: var(--mondrian-blue);
+  padding: 4px;
 }
+
+
+
 
 nav li a:hover {
   border-bottom: var(--mondrian-red) 1px solid;
@@ -72,22 +95,21 @@ nav li a:hover {
 /* .navbar-toggle is div holding hamburger icon, not icon itself */
 .navbar-toggle {
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
+  margin-left: auto;
   cursor: pointer;
   color: rgba(0 0 0 / 0.7);
-  border-radius: 5px;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
   z-index: 100;
   font-size: 2rem;
 }
 
 .navbar-toggle:hover {
-  background-color: var(--mondrian-blue);
+  color: var(--mondrian-blue);
   border-radius: 0;
 }
 
@@ -103,11 +125,12 @@ nav li a:hover {
   border: solid 1px rgba(249, 249, 249, .125);
   background-color: #fff;
   padding: .5rem;
+  margin: .4em;
 }
 
 .center {
-  margin: 1.5em .5em .5em;
-  padding: 2em;
+  margin: 0 .5em 0 .5em;
+  padding: 0 1em;
   background-color: var(--mondrian-blue-alpha);
   display: flex;
   align-items: center;
@@ -117,12 +140,13 @@ nav li a:hover {
 
 /*-------------------- body styles --------------------*/
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-bottom: 2.5rem;  
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+}
+
+.intro p {
+  margin: 1em .5em 2em .5em;
 }
 
 /*-------------------- card styles --------------------*/
@@ -164,6 +188,7 @@ picture img {
   display: block;
   border: 0;
   height: auto;
+
 }
 
 /*-------------------- footer styles --------------------*/
@@ -207,14 +232,18 @@ footer {
 /* 640 px */
 @media screen and (min-width: 40em) {
   .center {
-    margin: 0 2em 2em 2em;
+    margin: 0 2em 0 2em;
   }
-  .navbar { display: flex; }
-  .navbar-toggle { visibility: hidden; }
+  .navbar { 
+    display: flex; 
+    padding: .5em 0; 
+  }
+  .navbar-toggle { display: none; }
   .nav-items {
     visibility: visible;
     display: flex;
     width: 100%;
+    height: 60px;
   }
 
   .nav-items li {
@@ -224,7 +253,10 @@ footer {
     justify-content: center;
   }
 
-  .nav-items li a { letter-spacing: 0.08rem; }
+  .nav-items li a { 
+    letter-spacing: 0.08rem; 
+    padding: 1em;
+  }
 
   .cards {
       display: flex;
