@@ -38,6 +38,16 @@
     color: var(--mondrian-yellow);
 }
 
+a[target="_blank"]:after {
+    background-image: url(img/link-ext.png);
+	background-size: 14px 14px;
+    display: inline-block;
+    width: 14px; 
+    height: 14px;
+	content: "";
+	
+}
+
 .section-title {
     margin: 1em 0;
     border-top: 1px solid var(--mondrian-yellow);
