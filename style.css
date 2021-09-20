@@ -59,6 +59,10 @@ nav.navbar {
   display: block; 
 }
 
+.nav-item:current {
+  background-color: #225095;
+}
+
 .nav-items li {
   text-align: center;
   margin: 0 auto;

@@ -2,7 +2,7 @@
     margin-bottom: 0;
 }
 
-.date-right {
+.float-right {
     float: right;
     text-align: right;
     margin-bottom: 0;
@@ -25,25 +25,26 @@
     text-align: right;
 }
 
-.contact-info a {
+.container a {
     text-decoration: none;
     color: var(--mondrian-red);
 }
 
-.contact-info a:hover {
+.container a:hover {
     color: var(--mondrian-blue);
 }
 
-.contact-info a:active {
+.container a:active {
     color: var(--mondrian-yellow);
 }
 
 .section-title {
     margin: 1em 0;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid var(--mondrian-yellow);
+    border-bottom: 1px solid var(--mondrian-yellow);
     padding-top: 7px;
     text-align: center;
+	color: var(--mondrian-blue);
 }
 
 .experience {
