@@ -1,13 +1,66 @@
+.degree-title {
+    margin-bottom: 0;
+}
+
+.date-right {
+    float: right;
+    text-align: right;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+
+.skill-list {
+    columns: 2;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.contact-info {
+    margin-left: auto;
+    text-align: right;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: var(--mondrian-red);
+}
+
+.contact-info a:hover {
+    color: var(--mondrian-blue);
+}
+
+.contact-info a:active {
+    color: var(--mondrian-yellow);
+}
+
+.section-title {
+    margin: 1em 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.experience {
+    margin-bottom: 4em;
+}
+
 .download {
-    position: absolute;
-    top: 5px;
-    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
 }
 
 .download-btn {
 	box-shadow:inset 0px 1px 0px 0px #f29c93;
 	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-	background-color:#fe1a00;
+	background-color: var(--mondrian-red);
 	border-radius:6px;
 	border:1px solid #d83526;
 	display:inline-block;
