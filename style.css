@@ -1,6 +1,7 @@
 :root {
   --mondrian-yellow: #fac901;
   --mondrian-red: #dd0100;
+  --mondrian-red-pale: rgb(221, 1, 0, .3);
   --mondrian-blue: #225095;
   --mondrian-blue-alpha: rgba(34 80 149 / .08);
   --mondrian-white: #f9f9f9;
@@ -11,6 +12,7 @@
 
 body {
   position: relative;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /*-------------------- typography -------------------*/
