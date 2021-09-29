@@ -138,6 +138,10 @@ nav li a:hover {
   flex-direction: column;
 }
 
+.banner {
+  margin-bottom: 3em;
+}
+
 /*-------------------- body styles --------------------*/
 main {
   padding-bottom: 2.5rem;  
