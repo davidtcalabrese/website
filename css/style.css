@@ -13,11 +13,13 @@
   --name-backdrop: rgb(6, 0, 59);
   --mondrian-blue: #5c9af7;
   --navbar-toggle: #f9f9f9;
+  --mondrian-red: #ff1e1e;
 }
 
 * { box-sizing: border-box; }
 
 body {
+  --mondrian-red: #dd0100;
   --background-color: #f9f9f9;
   --text-color: #000;
   --name-backdrop: rgba(34 80 149 / .08);
