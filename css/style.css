@@ -166,6 +166,11 @@ nav li a:hover {
   margin-bottom: 3em;
 }
 
+.banner img {
+  height: auto;
+  width: 100%;
+}
+
 /*-------------------- body styles --------------------*/
 main {
   padding-bottom: 2.5rem;  
