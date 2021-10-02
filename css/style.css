@@ -3,15 +3,11 @@
   --mondrian-red: #dd0100;
   --mondrian-red-pale: rgb(221, 1, 0, .3);
   --mondrian-blue: #225095;
-  --name-backdrop: rgba(34 80 149 / .08);
   --mondrian-white: #f9f9f9;
   --mondrian-black: #30303a;
-  --background-color: #f9f9f9;
-  --text-color: #000;
-  --navbar-toggle: rgba(0 0 0 / 0.7);
 }
 
-[data-theme="dark"] {
+.dark {
   --background-color: #3F3F3F;
   --text-color: #fff;
   --name-backdrop: rgb(6, 0, 59);
@@ -22,6 +18,11 @@
 * { box-sizing: border-box; }
 
 body {
+  --background-color: #f9f9f9;
+  --text-color: #000;
+  --name-backdrop: rgba(34 80 149 / .08);
+  --mondrian-blue: #225095;
+  --navbar-toggle: rgba(0 0 0 / 0.7);
   background-color: var(--background-color);
   color: var(--text-color);
   position: relative;

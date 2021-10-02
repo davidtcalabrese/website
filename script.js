@@ -1,30 +1,27 @@
-// navbar functionality
+// grab references
 const navItems = document.querySelector(".nav-items");
 const navBarToggle = document.querySelector("#navbar-toggle");
+let btn = document.querySelector("#theme-switcher");
 
+// navbar functionality
 navBarToggle.addEventListener("click", () => {
     console.log("toggled");
     navItems.classList.toggle("active");
 });
 
+// darkmode logic
+const currentTheme = localStorage.getItem("theme");
 
-// darkmode
-document.addEventListener("DOMContentLoaded", function(event) {
-    document.documentElement.setAttribute("data-theme", "light");
+document.addEventListener('DOMContentLoaded', function(event) {
+    if (currentTheme == "dark") {
+        document.body.classList.toggle("dark");
+      } else if (currentTheme == "light") {
+        document.body.classList.toggle("light");
+      }
+})
 
-    // Get our button switcher
-    let themeSwitcher = document.getElementById("theme-switcher");
-
-    // When our button gets clicked
-    themeSwitcher.onclick = function() {
-      // Get the current selected theme, on the first run
-      // it should be `light`
-      let currentTheme = document.documentElement.getAttribute("data-theme");
-
-      // Switch between `dark` and `light`
-      let switchToTheme = currentTheme === "dark" ? "light" : "dark"
-
-      // Set our currenet theme to the new one
-      document.documentElement.setAttribute("data-theme", switchToTheme);
-    }
-  });
+btn.addEventListener("click", function() { 
+    document.body.classList.toggle("dark");
+    var theme = document.body.classList.contains("dark") ? "dark" : "light";
+    localStorage.setItem("theme", theme);
+});
