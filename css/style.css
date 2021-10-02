@@ -14,6 +14,8 @@
   --mondrian-blue: #5c9af7;
   --navbar-toggle: #f9f9f9;
   --mondrian-red: #ff1e1e;
+  --card-background: rgb(83, 82, 82);
+  --card-shadow: 3px 3px 8px rgba(200, 212, 228, 0.3);
 }
 
 * { box-sizing: border-box; }
@@ -25,6 +27,8 @@ body {
   --name-backdrop: rgba(34 80 149 / .08);
   --mondrian-blue: #225095;
   --navbar-toggle: rgba(0 0 0 / 0.7);
+  --card-background: #f9f9f9;
+  --card-shadow: 3px 3px 8px hsla(216, 63%, 36%, .2);
   background-color: var(--background-color);
   color: var(--text-color);
   position: relative;
@@ -191,7 +195,7 @@ main {
 }
 
 .card {
-	background: white;
+	background: var(--card-background);
 	margin-bottom: 2em;	
 }
 
@@ -202,11 +206,12 @@ main {
 }
 
 .card a:hover {
-	box-shadow: 3px 3px 8px hsla(216, 63%, 36%, .2);
+	box-shadow: var(--card-shadow);
 }
 
 .card-content {
 	padding: 1.4em;
+  color: var(--text-color)
 }
 
 .card-content h2 {
