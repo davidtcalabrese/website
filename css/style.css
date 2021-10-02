@@ -3,14 +3,27 @@
   --mondrian-red: #dd0100;
   --mondrian-red-pale: rgb(221, 1, 0, .3);
   --mondrian-blue: #225095;
-  --mondrian-blue-alpha: rgba(34 80 149 / .08);
+  --name-backdrop: rgba(34 80 149 / .08);
   --mondrian-white: #f9f9f9;
   --mondrian-black: #30303a;
+  --background-color: #f9f9f9;
+  --text-color: #000;
+  --navbar-toggle: rgba(0 0 0 / 0.7);
+}
+
+[data-theme="dark"] {
+  --background-color: #3F3F3F;
+  --text-color: #fff;
+  --name-backdrop: rgb(6, 0, 59);
+  --mondrian-blue: #5c9af7;
+  --navbar-toggle: #f9f9f9;
 }
 
 * { box-sizing: border-box; }
 
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   position: relative;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -37,6 +50,17 @@ p a:active {
   color: var(--mondrian-black);
 } 
 
+#theme-switcher {
+  position: absolute;
+  width: 40px;
+  top: 1em;
+  left: 1em;
+}
+
+#theme-switcher:hover {
+  cursor: pointer;
+}
+
 /*-------------------- nav styles --------------------*/
 nav {
   display: flex;
@@ -54,7 +78,7 @@ nav.navbar {
   display: none;
   margin: 0 auto;
   margin: 1em;
-  padding-right: 2em;
+  padding-right: 1.5em;
 }
 
 .nav-items.active { 
@@ -95,11 +119,11 @@ nav li a:hover {
 /* .navbar-toggle is div holding hamburger icon, not icon itself */
 .navbar-toggle {
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 0;
   margin-left: auto;
   cursor: pointer;
-  color: rgba(0 0 0 / 0.7);
+  color: var(--navbar-toggle);
   width: 40px;
   height: 40px;
   display: flex;
@@ -129,9 +153,9 @@ nav li a:hover {
 }
 
 .center {
-  margin: 0 .5em 0 .5em;
+  margin: .5em;
   padding: 0 1em;
-  background-color: var(--mondrian-blue-alpha);
+  background-color: var(--name-backdrop);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,11 +235,11 @@ footer {
 }
 
 .social a {
-  color: #f7f6f6;
+  color: var(--background-color)
 }
 
 .social a:hover {
-  color: #fff;
+  color: var(--background-color)
 }
 
 .social i {
@@ -273,6 +297,13 @@ footer {
       display: flex;
       flex: 0 1 calc(50% - .5em);
       margin-bottom: 1em;
+  }
+
+  #theme-switcher {
+    position: absolute;
+    width: 40px;
+    top: 36px;
+    left: 2em;
   }
 }
 /* 960 px */
