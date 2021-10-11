@@ -302,7 +302,7 @@ footer {
   .cards {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       margin-top: -1em;
   }
 
@@ -310,6 +310,7 @@ footer {
       display: flex;
       flex: 0 1 calc(50% - .5em);
       margin-bottom: 1em;
+      margin-right: .5em;
   }
 
   #theme-switcher {
