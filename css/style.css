@@ -15,7 +15,7 @@
   --navbar-toggle: #f9f9f9;
   --mondrian-red: #ff1e1e;
   --card-background: rgb(83, 82, 82);
-  --card-shadow: 3px 3px 8px rgba(200, 212, 228, 0.3);
+  --card-shadow: 5px 5px 8px rgba(200, 212, 228, 0.3);
 }
 
 * { box-sizing: border-box; }
