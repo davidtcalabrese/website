@@ -171,6 +171,12 @@ nav li a:hover {
 
 .banner {
   margin-bottom: 3em;
+  text-align: center;
+}
+
+.banner blockquote {
+  font-size: 1.3em;
+  font-family: cursive;
 }
 
 .banner img {
