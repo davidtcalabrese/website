@@ -1,5 +1,5 @@
 .introduction {
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 figure {
@@ -17,5 +17,5 @@ figcaption {
 figure img {
     width: 80%;
     height: auto;
-    max-width: 400px;
+    max-width: 500px;
 }
