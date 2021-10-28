@@ -93,6 +93,21 @@ a[target="_blank"]:after {
 }
 
 /* media queries */
+@media screen and (max-width: 750px) {
+    .associate, .bachelor, .degree-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .float-right {
+        display: inline-block;
+        margin: 0 auto;
+        float: none;
+    }
+}
+
 @media screen and (max-width: 550px) {
     main.container {
         padding: 4px 0;
