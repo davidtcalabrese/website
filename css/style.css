@@ -150,6 +150,10 @@ nav li a:hover {
 
 /*--------------- header styles ---------------*/
 /*---- (box with name, title and picture) -----*/
+header {
+  margin: 0 auto;
+  max-width: 1400px;
+}
 .propic {
   width: 100px;
   height: 100px;
