@@ -5,9 +5,21 @@ let btn = document.querySelector("#theme-switcher");
 
 // navbar functionality
 navBarToggle.addEventListener("click", () => {
-    console.log("toggled");
     navItems.classList.toggle("active");
 });
+
+// if navbar is toggled for small screen and screen resizes past 
+// breakpoint (622px), toggle the navbar again
+window.addEventListener('resize', () => {
+    const width = getWidth();
+    console.log( width);
+    if (navItems.classList.contains("active")) {
+        if (width > 622) {
+          navItems.classList.toggle("active");
+        }
+    }
+})
+
 
 // darkmode logic
 const currentTheme = localStorage.getItem("theme");
@@ -25,3 +37,13 @@ btn.addEventListener("click", function() {
     var theme = document.body.classList.contains("dark") ? "dark" : "light";
     localStorage.setItem("theme", theme);
 });
+
+function getWidth() {
+  return Math.max(
+    document.body.scrollWidth,
+    document.documentElement.scrollWidth,
+    document.body.offsetWidth,
+    document.documentElement.offsetWidth,
+    document.documentElement.clientWidth
+  );
+}
