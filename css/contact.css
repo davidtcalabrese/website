@@ -13,11 +13,11 @@
 }
 form { 
   max-width:420px; 
-  margin:50px auto; 
+  margin: 2rem auto; 
 }
 
 .introduction {
-  margin-top: 3em;
+  margin-top: 1.5rem;
 }
 
 .introduction h3 {

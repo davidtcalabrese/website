@@ -37,26 +37,20 @@ body {
 }
 
 /*-------------------- typography -------------------*/
-h1, h2 {
-  font-family: 'Open Sans', sans-serif;
-}
+h1, h2 { font-family: 'Raleway', sans-serif; }
+
+h3 { font-family: 'Outfit', sans-serif; }
 
 p a:link {
   text-decoration: none;
   color: var(--mondrian-red);
 }
 
-p a:visited {
-  color:var(--mondrian-yellow);
-}
+p a:visited { color:var(--mondrian-yellow); }
 
-p a:hover {
-  color: var(--mondrian-blue);
-}
+p a:hover { color: var(--mondrian-blue); }
 
-p a:active {
-  color: var(--mondrian-black);
-} 
+p a:active { color: var(--mondrian-black); } 
 
 #theme-switcher {
   position: absolute;
@@ -65,9 +59,7 @@ p a:active {
   left: 1em;
 }
 
-#theme-switcher:hover {
-  cursor: pointer;
-}
+#theme-switcher:hover { cursor: pointer; }
 
 /*-------------------- nav styles --------------------*/
 nav {
@@ -89,13 +81,7 @@ nav.navbar {
   padding-right: 1.5em;
 }
 
-.nav-items.active { 
-  display: block; 
-}
-
-.nav-item:current {
-  background-color: #225095;
-}
+.nav-items.active {  display: block; }
 
 .nav-items li {
   text-align: center;
@@ -145,7 +131,8 @@ nav li a:hover {
   border-radius: 0;
 }
 
-.fa-bars { transition: transform .3s ease-in;  }
+.fa-bars { transition: transform .3s ease-in; }
+
 .fa-bars:hover { transform: rotate(-90deg); }
 
 /*--------------- header styles ---------------*/
@@ -154,6 +141,7 @@ header {
   margin: 0 auto;
   max-width: 1400px;
 }
+
 .propic {
   width: 100px;
   height: 100px;
@@ -174,118 +162,38 @@ header {
   flex-direction: column;
 }
 
-.banner {
-  margin-bottom: 3em;
-  text-align: center;
-}
+/* --------- main --------- */
 
-.banner blockquote {
-  font-size: 1.3em;
-  font-family: cursive;
-}
 
-.banner img {
-  height: auto;
-  width: 100%;
-}
-
-/*-------------------- body styles --------------------*/
-main {
-  padding-bottom: 2.5rem;  
-  position: relative;
-}
-
-.intro p {
-  margin: 1em .5em 2em .5em;
-}
-
-/*-------------------- card styles --------------------*/
-.cards {
-  padding-bottom: 2.5rem;
-}
-
-.card {
-	background: var(--card-background);
-	margin-bottom: 2em;	
-}
-
-.card a {
-	color: black;
-	text-decoration: none;
-  height: 100%;
-}
-
-.card a:hover {
-	box-shadow: var(--card-shadow);
-}
-
-.card-content {
-	padding: 1.4em;
-  color: var(--text-color);
-  height: 100%;
-}
-
-.card-content h2 {
-	margin-top: 0;
-	margin-bottom: .5em;
-	font-weight: normal;
-}
-
-.card-content p {
-	font-size: 95%;
-}
-
-picture img {
-  width: 100%;
-  display: block;
-  border: 0;
-  height: auto;
-
-}
-
-/*-------------------- footer styles --------------------*/
-footer {
+/*-------- footer styles -------*/
+#footer { 
+  position: relative; 
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  height: 2.5rem;
-  width: 100%;
-  bottom: 0;
+  margin: 2rem 0 1rem 0;
+  height: 2rem;
 }
 
-.social {
-  margin-bottom: 3em;
-}
+.social { margin-bottom: .5em; }
 
-.social a {
-  color: var(--background-color)
-}
+.social a { color: var(--background-color) }
 
-.social a:hover {
-  color: var(--background-color)
-}
+.social a:hover { color: var(--background-color) }
 
-.social i {
+.social i { 
   color: var(--mondrian-blue);
   margin: 0 20px;
 }
 
-.social i:hover {
-  color: var(--mondrian-yellow);
-}
+.social i:hover {  color: var(--mondrian-yellow); }
 
-.social i:active {
-  color: var(--mondrian-red);
-
-}
+.social i:active { color: var(--mondrian-red); }
 
 /*-------------------- media queries --------------------*/
 /* 640 px */
 @media screen and (min-width: 40em) {
-  .center {
-    margin: 0 2em 0 2em;
-  }
+  .center { margin: 0 2em 0 2em; }
   .navbar { 
     display: flex; 
     padding: .5em 0; 
@@ -299,7 +207,6 @@ footer {
   }
 
   .nav-items li {
-    /* display: inline-block; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -310,35 +217,10 @@ footer {
     padding: 1em;
   }
 
-  .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: -1em;
-  }
-
-  .card {
-      display: flex;
-      flex: 0 1 calc(50% - .5em);
-      margin-bottom: 1em;
-      margin-right: .5em;
-  }
-
   #theme-switcher {
     position: absolute;
     width: 40px;
     top: 36px;
     left: 2em;
-  }
-}
-/* 960 px */
-@media screen and (min-width: 60em) {
-  .cards {
-      margin-top: inherit;
-  }
-  
-  .card {
-      flex: 0 1 calc(33% - 1em);
-      margin-bottom: 2em;
   }
 }

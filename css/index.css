@@ -1,0 +1,30 @@
+body { height: 100vh; }
+
+main { 
+  margin: 1rem 0;
+  padding: .5rem 0; 
+}
+
+.large-text h3 { 
+  text-align: center; 
+  font-size: 2.5rem;
+}
+
+.large-text p {
+  font-size: 1.5rem;
+  text-align: start;
+  font-family: 'Raleway', sans-serif; 
+}
+
+#footer {
+  position: absolute;
+  bottom: .5rem;
+  width: 100%;
+}
+
+/*----------------- media queries -----------------*/
+@media screen and (min-width: 40em) {
+  .large-text p {
+    font-size: 2rem;
+  }
+}

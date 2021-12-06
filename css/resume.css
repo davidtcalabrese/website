@@ -41,16 +41,6 @@
     color: var(--mondrian-yellow);
 }
 
-a[target="_blank"]:after {
-    background-image: url(img/link-ext.png);
-	background-size: 14px 14px;
-    display: inline-block;
-    width: 14px; 
-    height: 14px;
-	content: "";
-	
-}
-
 .section-title {
     margin: 1em 0;
     border-top: 1px solid var(--mondrian-yellow);
@@ -60,15 +50,17 @@ a[target="_blank"]:after {
 	color: var(--mondrian-blue);
 }
 
-.experience {
-    margin-bottom: 4em;
-}
+.experience { margin-bottom: 4em; }
+
+.social { margin: 1rem 0; }
+
+#footer { position: relative; }
 
 .download {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 .download-btn {
@@ -127,6 +119,6 @@ a[target="_blank"]:after {
     }
 
     .social {
-        margin-top: 2em;
+        margin-top: 1em;
     }
 } 
