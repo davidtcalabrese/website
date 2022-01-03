@@ -73,16 +73,7 @@ nav.navbar {
   width: 100%;
 }
 
-.nav-items {
-  display: flex;
-  justify-content: center;
-  display: none;
-  margin: 0 auto;
-  margin: 1em;
-  padding-right: 1.5em;
-}
-
-.nav-items.active {  display: block; }
+.nav-items { display: flex; }
 
 .nav-items li {
   text-align: center;
@@ -91,17 +82,14 @@ nav.navbar {
 }
 
 nav li {
-  display: inline;
-  float: left;
+  max-width: 200px;
 }
 
 nav li a {
   display: block;
   padding: 16px;
-  letter-spacing: 2px;
   text-decoration: none;
   color: var(--mondrian-blue);
-  padding: 4px;
 }
 
 nav li a:hover {
@@ -110,31 +98,6 @@ nav li a:hover {
   color: var(--mondrian-yellow);
   transition: 0.3s;
 }
-
-/* .navbar-toggle is div holding hamburger icon, not icon itself */
-.navbar-toggle {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  margin-left: auto;
-  cursor: pointer;
-  color: var(--navbar-toggle);
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  z-index: 100;
-  font-size: 2rem;
-}
-
-.navbar-toggle:hover {
-  color: var(--mondrian-blue);
-  border-radius: 0;
-}
-
-.fa-bars { transition: transform .3s ease-in; }
-
-.fa-bars:hover { transform: rotate(-90deg); }
 
 /*--------------- header styles ---------------*/
 /*---- (box with name, title and picture) -----*/
@@ -154,7 +117,7 @@ header {
 }
 
 .center {
-  margin: .5em;
+  margin: 0 .5em .5em .5em;
   padding: 0 1em;
   background-color: var(--name-backdrop);
   display: flex;
@@ -194,10 +157,9 @@ header {
 /* 640 px */
 @media screen and (min-width: 40em) {
   .center { margin: 0 2em 0 2em; }
-  .navbar { 
-    display: flex; 
-    padding: .5em 0; 
-  }
+  .navbar-toggler { margin-right: 1em; }
+  .navbar-brand { margin-left: 1em; }
+  /*
   .navbar-toggle { display: none; }
   .nav-items {
     visibility: visible;
@@ -215,12 +177,5 @@ header {
   .nav-items li a { 
     letter-spacing: 0.08rem; 
     padding: 1em;
-  }
-
-  #theme-switcher {
-    position: absolute;
-    width: 40px;
-    top: 36px;
-    left: 2em;
-  }
+  } */
 }
