@@ -7,7 +7,7 @@ figure {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 6em;
+    margin-bottom: 2em;
 }
 
 figcaption {
@@ -15,7 +15,7 @@ figcaption {
 }
 
 figure img {
-    width: 80%;
+    width: 60%;
     height: auto;
     max-width: 500px;
 }
