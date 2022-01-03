@@ -8,6 +8,9 @@
   flex-direction: column;
 }
 
+.introduction h3 { text-align: center; }
+.introduction p { margin-top: 1rem; }
+
 .form {
   margin-bottom: 2em;
 }

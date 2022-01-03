@@ -70,10 +70,11 @@ nav {
 nav.navbar {
   font-size: 1.125rem;
   padding: 0;
+  width: 100%;
 }
 
 .nav-items {
-  width: 100%;  display: flex;
+  display: flex;
   justify-content: center;
   display: none;
   margin: 0 auto;
@@ -164,15 +165,14 @@ header {
 
 /* --------- main --------- */
 
-
 /*-------- footer styles -------*/
 #footer { 
   position: relative; 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0 1rem 0;
-  height: 2rem;
+  margin: 2rem 0 2rem 0;
+  height: 4rem;
 }
 
 .social { margin-bottom: .5em; }
@@ -181,7 +181,7 @@ header {
 
 .social a:hover { color: var(--background-color) }
 
-.social i { 
+#footer .social i { 
   color: var(--mondrian-blue);
   margin: 0 20px;
 }

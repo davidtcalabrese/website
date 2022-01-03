@@ -29,57 +29,21 @@ Date: 08/28/2021         "") `"` DC  \  ((`"`
 
   <body>
     <header>
- 
-      <nav class="navbar">
-        <ul class="nav-items">
-          <li><a href="index.html" class="nav-item">home</a></li>
-          <li><a href="resume.html" class="nav-item">resume</a></li>
-          <li><a href="projects.html" class="nav-item">projects</a></li>
-          <li><a href="about.html" class="nav-item">about</a></li>
-          <li><a href="contact.html" class="nav-item">contact</a></li>
-        </ul>
-        <div class="navbar-toggle" id="navbar-toggle">
-          <i class="fas fa-bars"></i>
-        </div>
-      </nav>
-
-      <div class="center">
-        <img class="propic" src="img/profile-pic-circle.png" alt="" />
-        <div class="name-container">
-          <h1>David Calabrese</h1>
-        </div>
-        <h2>Software Developer</h2>
-      </div>
+      <nav include-html="includes/navigation.html"></nav>
+      <div include-html="includes/banner.html"></div>
     </header>
 
-    <img src="img/sun-moon.png" alt="sun and moon" id="theme-switcher">
-
     <main class="container-xl">
-
-    <div class="large-text mx-sm-3 mx-md-4 mx-lg-2 mx-xl-3">
-      <h3 class="mb-3">Thanks for coming to visit!</h3>
-      <p class="lead">This site features a number of my portfolio projects as well as a resume and other contact information for employers to find and hire me. Let me know what you think and don't hesitate to reach out! For more work, check out my <a href="https://github.com/davidtcalabrese" target="_blank" rel="noreferrer noopener">GitHub</a>.
-      </p>
-    </div>
-  </main>
-
-    <footer id="footer">
-      <div class="social">
-        <a href="https://www.linkedin.com/in/david-calabrese-6828731a3/">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://github.com/davidtcalabrese" target="_blank" rel="noreferrer noopener">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a href="https://www.facebook.com/david.calabrese.334/">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="https://twitter.com/cuentodenada1">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
+      <div class="large-text mx-sm-3 mx-md-4 mx-lg-2 mx-xl-3">
+        <h3 class="mb-3">Thanks for coming to visit!</h3>
+        <p class="lead">This site features a number of my portfolio projects as well as a resume and other contact information for employers to find and hire me. Let me know what you think and don't hesitate to reach out! For more work, check out my <a href="https://github.com/davidtcalabrese" target="_blank" rel="noreferrer noopener">GitHub</a>.
+        </p>
       </div>
-    </footer>
-        
+    </main>
+
+    <footer include-html="includes/footer.html"></footer>
+    <script src="js/includeHTML.js"></script>
+    <script>includeHTML();</script>
   </body>
 </html>
 

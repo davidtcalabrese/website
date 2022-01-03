@@ -22,6 +22,7 @@ main {
   width: 100%;
 }
 
+
 /*----------------- media queries -----------------*/
 @media screen and (min-width: 40em) {
   .large-text p {
