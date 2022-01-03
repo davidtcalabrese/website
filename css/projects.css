@@ -43,6 +43,8 @@ picture img {
 
 .social { margin: 1rem 0; }
 
+#tax a:first-of-type { height: 0; }
+
 /*-------------------- media queries --------------------*/
 /* 640 px */
 @media screen and (min-width: 40em) {
@@ -50,7 +52,6 @@ picture img {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: -1em;
     }
   
     .card {
