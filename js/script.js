@@ -1,42 +1,46 @@
 // grab references
-const navItems = document.querySelector(".nav-items");
-const navBarToggle = document.querySelector("#navbar-toggle");
+
 let btn = document.querySelector("#theme-switcher");
 
 // navbar functionality
-navBarToggle.addEventListener("click", () => {
-    navItems.classList.toggle("active");
-});
+window.setTimeout(() => {
+  const navItems = document.querySelector(".nav-items");
+  const navBarToggle = document.querySelector("#navbar-toggle");
 
-// if navbar is toggled for small screen and screen resizes past 
-// breakpoint (622px), toggle the navbar again
-window.addEventListener('resize', () => {
+  navBarToggle.addEventListener("click", () => {
+    navItems.classList.toggle("active");
+  });
+
+  // if navbar is toggled for small screen and screen resizes past 
+  // breakpoint (622px), toggle the navbar again
+  window.addEventListener('resize', () => {
     const width = getWidth();
-    console.log( width);
     if (navItems.classList.contains("active")) {
         if (width > 622) {
           navItems.classList.toggle("active");
         }
     }
-})
-
+  })
+}, 500)
 
 // darkmode logic
 const currentTheme = localStorage.getItem("theme");
 
 document.addEventListener('DOMContentLoaded', function(event) {
-    if (currentTheme == "dark") {
-        document.body.classList.toggle("dark");
-      } else if (currentTheme == "light") {
-        document.body.classList.toggle("light");
-      }
+  if (currentTheme == "dark") {
+      document.body.classList.toggle("dark");
+    } else if (currentTheme == "light") {
+      document.body.classList.toggle("light");
+    }
+
+    btn.addEventListener("click", function() { 
+      document.body.classList.toggle("dark");
+      var theme = document.body.classList.contains("dark") ? "dark" : "light";
+      localStorage.setItem("theme", theme);
+  });
 })
 
-btn.addEventListener("click", function() { 
-    document.body.classList.toggle("dark");
-    var theme = document.body.classList.contains("dark") ? "dark" : "light";
-    localStorage.setItem("theme", theme);
-});
+
 
 function getWidth() {
   return Math.max(
