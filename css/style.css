@@ -82,7 +82,11 @@ nav li a {
   color: var(--mondrian-blue);
 }
 
-nav li a:hover {
+#nav li a {
+  color: var(--mondrian-blue);
+}
+
+#nav li a:hover {
   border-bottom: var(--mondrian-red) 1px solid;
   margin-bottom: -1px;
   color: var(--mondrian-yellow);
@@ -130,11 +134,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0 1.25rem 0;
+  margin: 1.125rem 0 1.25rem 0;
   height: 4rem;
 }
 
-.social {
+#footer .social {
   margin-bottom: 0.5em;
 }
 
@@ -148,14 +152,14 @@ header {
 
 #footer .social i {
   color: var(--mondrian-blue);
-  margin: 0 20px;
+  margin: 0 40px;
 }
 
-.social i:hover {
+#footer .social i:hover {
   color: var(--mondrian-yellow);
 }
 
-.social i:active {
+#footer .social i:active {
   color: var(--mondrian-red);
 }
 
