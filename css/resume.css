@@ -1,122 +1,145 @@
+main {
+  background-color: rgb(245, 245, 245);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+.center {
+  margin-bottom: 1rem;
+}
 .degree-title {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .float-right {
-    float: right;
-    text-align: right;
-    margin-bottom: 0;
-    font-style: italic;
+  float: right;
+  text-align: right;
+  margin-bottom: 0;
+  font-style: italic;
 }
 
 .skill-list {
-    columns: 2;
+  columns: 2;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    margin: 2em 0;
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
 }
 
 .contact-info {
-    margin-left: auto;
-    text-align: right;
+  margin-left: auto;
+  text-align: right;
 }
 
-.container { max-width: 700px; }
+.container {
+  max-width: 725px;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
 
 .container a {
-    text-decoration: none;
-    color: var(--mondrian-red);
+  text-decoration: none;
+  color: var(--mondrian-red);
 }
 
-.container a:hover { color: var(--mondrian-blue); }
-
-.container a:active { color: var(--mondrian-yellow); }
+.container a:hover {
+  color: var(--mondrian-blue);
+}
+.container a:active {
+  color: var(--mondrian-yellow);
+}
 
 .section-title {
-    margin: 1em 0;
-    border-top: 1px solid var(--mondrian-yellow);
-    border-bottom: 1px solid var(--mondrian-yellow);
-    padding-top: 7px;
-    text-align: center;
-	color: var(--mondrian-blue);
+  margin: 1em 0;
+  border-top: 1px solid var(--mondrian-yellow);
+  border-bottom: 1px solid var(--mondrian-yellow);
+  padding-top: 7px;
+  text-align: center;
+  color: var(--mondrian-blue);
 }
 
-.experience { margin-bottom: 4em; }
-
-.job-title, p.employer { margin-bottom: 0; }
-
-p.employer { font-family: 'Raleway', sans-serif; }
-
-.social { margin: 1rem 0; }
-
-#footer { position: relative; }
+.experience {
+  margin-bottom: 4em;
+}
+.job-title,
+p.employer {
+  margin-bottom: 0;
+}
+p.employer {
+  font-family: 'Raleway', sans-serif;
+}
+.social {
+  margin: 1rem 0;
+}
+#footer {
+  position: relative;
+}
 
 .download {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
 }
 
 .download-btn {
-	box-shadow:inset 0px 1px 0px 0px #f29c93;
-	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-	background-color: var(--mondrian-red);
-	border-radius:6px;
-	border:1px solid #d83526;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:9px 18px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  background-color: var(--mondrian-red);
+  border-radius: 6px;
+  border: 1px solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 9px 18px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
 }
 .download-btn:hover {
-	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-	background-color:#ce0100;
+  background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+  background-color: #ce0100;
 }
 .download-btn:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 /* media queries */
 @media screen and (max-width: 750px) {
-    .associate, .bachelor, .degree-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+  .associate,
+  .bachelor,
+  .degree-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    .float-right.grad-date {
-        display: inline-block;
-        margin: 0 auto;
-        float: none;
-    }
+  .float-right.grad-date {
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+  }
 }
 
 @media screen and (max-width: 550px) {
-    main.container {
-        padding: 4px 0;
-        margin: 0px 4px; 
-    }
+  main.container {
+    padding: 4px 0;
+    margin: 0px 4px;
+  }
 
-    .projects ul {
-        padding-left: .25em;
-    }
-
-    .projects li {
-        list-style: none;
-    }
-
-    .social {
-        margin-top: 1em;
-    }
-} 
+  .projects ul {
+    padding-left: 0.25em;
+  }
+  .projects li {
+    list-style: none;
+  }
+  .social {
+    margin-top: 1em;
+  }
+}

@@ -1,27 +1,31 @@
-body { height: 100vh; }
-
-main { 
-  margin: 1rem 0;
-  padding: .5rem 0; 
+body {
+  height: 100vh;
 }
 
-.large-text h3 { 
-  text-align: center; 
+main {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.large-text h3 {
+  text-align: center;
   font-size: 2.5rem;
 }
 
 .large-text p {
   font-size: 1.25rem;
   text-align: start;
-  font-family: 'Raleway', sans-serif; 
+  font-family: 'Raleway', sans-serif;
 }
 
 #footer {
   position: absolute;
-  bottom: .5rem;
+  bottom: 0.5rem;
   width: 100%;
 }
-
 
 /*----------------- media queries -----------------*/
 @media screen and (min-width: 40em) {

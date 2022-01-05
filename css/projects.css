@@ -1,38 +1,47 @@
 .center {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.intro {
+  font-size: 1.125rem;
+  margin-bottom: 1.75rem;
 }
 
 /*-------------------- card styles --------------------*/
-.cards { padding-bottom: 2rem; }
+.cards {
+  padding-bottom: 2rem;
+}
 
 .card {
-	background: var(--card-background);
-	margin-bottom: 2em;	
+  background: var(--card-background);
+  margin-bottom: 2em;
 }
 
 .card a {
-	color: black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
   height: 100%;
 }
 
 .card a:hover {
-	box-shadow: var(--card-shadow);
+  box-shadow: var(--card-shadow);
 }
 
 .card-content {
-	padding: 1.4em;
+  padding: 1.4em;
   color: var(--text-color);
   height: 100%;
 }
 
 .card-content h2 {
-	margin-top: 0;
-	margin-bottom: .5em;
-	font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
 }
 
-.card-content p { font-size: 95%; }
+.card-content p {
+  font-size: 95%;
+}
 
 picture img {
   width: 100%;
@@ -41,32 +50,38 @@ picture img {
   height: auto;
 }
 
-.social { margin: 1rem 0; }
+.social {
+  margin: 1rem 0;
+}
 
-#tax a:first-of-type { height: 0; }
+#tax a:first-of-type {
+  height: 0;
+}
 
 /*-------------------- media queries --------------------*/
 /* 640 px */
 @media screen and (min-width: 40em) {
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-  
-    .card {
-        display: flex;
-        flex: 0 1 calc(50% - .5em);
-        margin-bottom: 1em;
-        margin-right: .5em;
-    }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  /* 960 px */
-  @media screen and (min-width: 60em) {
-    .cards { margin-top: inherit; }
-    
-    .card {
-        flex: 0 1 calc(33% - 1em);
-        margin-bottom: 2em;
-    }
+
+  .card {
+    display: flex;
+    flex: 0 1 calc(50% - 0.5em);
+    margin-bottom: 1em;
+    margin-right: 0.5em;
   }
+}
+/* 960 px */
+@media screen and (min-width: 60em) {
+  .cards {
+    margin-top: inherit;
+  }
+
+  .card {
+    flex: 0 1 calc(33% - 1em);
+    margin-bottom: 2em;
+  }
+}

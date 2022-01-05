@@ -34,7 +34,7 @@ Date: 08/28/2021         "") `"` DC  \  ((`"`
       <div include-html="includes/banner.html"></div>
     </header>
 
-    <main class="container">
+    <main class="container" id="main">
       <div class="container">
         <div class="header">
             <div class="title">
@@ -113,7 +113,7 @@ Date: 08/28/2021         "") `"` DC  \  ((`"`
                   <li><span class="description">An app for tracking expenses built with React 💸</span><span class="float-right">
                     <a href="https://github.com/davidtcalabrese/ISWAM" target="_blank">Keep $core</a> </span>
                   </li>
-                  <li><span class="description">Sorting game using the HTML drag-and-drop API 🌆</span><span class="float-right"> 
+                  <li><span class="description">Sorting game built with the drag-and-drop API 🌆</span><span class="float-right"> 
                     <a href="https://github.com/davidtcalabrese/sort-game" target="_blank">City Sort</a> </span>
                   </li>
                   <li><span class="description">Personal site with projects, resume, contact info 👨‍💼</span><span class="float-right">
@@ -181,16 +181,14 @@ Date: 08/28/2021         "") `"` DC  \  ((`"`
               </div>
             </div>
 
-        </section> <!-- end .experience -->
-
-        <div class="download">
-          <form action="/Resume-12-21.pdf" method="get">
-            <button class="download-btn" type="submit">Download PDF</button>
-          </form>
-        </div>
-     
+        </section> <!-- end .experience -->     
     </div> <!-- end .container-->
     </main>
+    <div class="download mt-4">
+      <form action="/Resume-12-21.pdf" method="get">
+        <button class="download-btn" type="submit">Download PDF</button>
+      </form>
+    </div>
     <footer include-html="includes/footer.html"></footer>
     <script src="js/includeHTML.js"></script>
     <script>includeHTML();</script>
