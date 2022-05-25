@@ -19,7 +19,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   position: relative;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Calibri, Arial, sans-serif;
 }
 
 /*-------------------- typography -------------------*/
