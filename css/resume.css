@@ -7,6 +7,7 @@ main {
 .center {
   margin-bottom: 1rem;
 }
+
 .degree-title {
   margin-bottom: 0;
 }
@@ -16,6 +17,7 @@ main {
   text-align: right;
   margin-bottom: 0;
   font-style: italic;
+  font-weight: normal;
 }
 
 .skill-list {
@@ -63,16 +65,25 @@ main {
 .experience {
   margin-bottom: 4em;
 }
+
+.job-title,
+.degree-title {
+  font-weight: 600;
+}
+
 .job-title,
 p.employer {
   margin-bottom: 0;
 }
+
 p.employer {
   font-family: 'Raleway', sans-serif;
 }
+
 .social {
   margin: 1rem 0;
 }
+
 #footer {
   position: relative;
 }
@@ -100,10 +111,12 @@ p.employer {
   text-decoration: none;
   text-shadow: 0px 1px 0px #b23e35;
 }
+
 .download-btn:hover {
   background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
   background-color: #ce0100;
 }
+
 .download-btn:active {
   position: relative;
   top: 1px;
