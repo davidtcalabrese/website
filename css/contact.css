@@ -14,9 +14,6 @@
   margin-top: 1rem;
 }
 
-.form {
-  /* margin-bottom: 2em; */
-}
 form {
   max-width: 420px;
   margin: 2rem auto;
@@ -39,7 +36,7 @@ form {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border: 2px solid var(--mondrian-yellow);
+  border: 1px solid var(--mondrian-yellow);
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -49,7 +46,7 @@ form {
 }
 
 .feedback-input:focus {
-  border: 2px solid var(--mondrian-red-pale);
+  border: 1px solid var(--mondrian-red-pale);
 }
 
 textarea {
