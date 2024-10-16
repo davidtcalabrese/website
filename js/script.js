@@ -22,22 +22,24 @@
 // }, 500)
 
 // darkmode logic
-// let btn = document.querySelector("#theme-switcher");
-// const currentTheme = localStorage.getItem("theme");
+let btn = document.querySelector("#theme-switcher");
+console.log("Butn: " + btn);
 
-// document.addEventListener('DOMContentLoaded', function(event) {
-//   if (currentTheme == "dark") {
-//       document.body.classList.toggle("dark");
-//     } else if (currentTheme == "light") {
-//       document.body.classList.toggle("light");
-//     }
+const currentTheme = localStorage.getItem("theme");
 
-//     btn.addEventListener("click", function() { 
-//       document.body.classList.toggle("dark");
-//       var theme = document.body.classList.contains("dark") ? "dark" : "light";
-//       localStorage.setItem("theme", theme);
-//   });
-// })
+document.addEventListener('DOMContentLoaded', function(event) {
+  if (currentTheme == "dark") {
+      document.body.classList.toggle("dark");
+    } else if (currentTheme == "light") {
+      document.body.classList.toggle("light");
+    }
+
+    btn.addEventListener("click", function() { 
+      document.body.classList.toggle("dark");
+      var theme = document.body.classList.contains("dark") ? "dark" : "light";
+      localStorage.setItem("theme", theme);
+  });
+})
 
 
 
