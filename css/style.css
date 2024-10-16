@@ -1,123 +1,66 @@
 :root {
   --mondrian-yellow: #fac901;
-  --mondrian-pale-yellow: #f7dc71;
   --mondrian-red: #dd0100;
-  --mondrian-red-pale: rgb(221, 1, 0, 0.3);
+  --mondrian-red-pale: rgb(221, 1, 0, .3);
   --mondrian-blue: #225095;
   --mondrian-white: #f9f9f9;
   --mondrian-black: #30303a;
-  --backdrop: rgba(34 80 149 / 0.08);
-  --secondary-background: #f9f9f9;
-  --card-shadow: 4px 5px 15px 3px rgba(17, 43, 82, 0.445);
-  --download-btn: #e1ecf4;
-  --text-color: #30303a;
 }
 
-:where(html) {
-  --darkmode: 0;
-  container-name: root;
-  container-type: normal;
+.dark {
+  --background-color: #292929;
+  --text-color: #fff;
+  --name-backdrop: rgb(6, 0, 59);
+  --mondrian-blue: #72a7f6;
+  --navbar-toggle: #f9f9f9;
+  --mondrian-red: #ff1e1e;
+  --mondrian-white: #225095;
+  --card-background: rgb(83, 82, 82);
+  --card-shadow: 4px 5px 15px 3px rgba(1, 16, 36, 0.87);
 }
+
+* { box-sizing: border-box; }
 
 body {
+  --mondrian-red: #dd0100;
+  --background-color: #f9f9f9;
+  --text-color: #000;
+  --name-backdrop: rgba(34 80 149 / .08);
+  --mondrian-blue: #225095;
+  --navbar-toggle: rgba(0 0 0 / 0.7);
+  --card-background: #f9f9f9;
+  --card-shadow: 4px 5px 15px 3px rgba(17, 43, 82, 0.445);
   background-color: var(--background-color);
   color: var(--text-color);
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    --darkmode: 1;
-  }
-}
-@media (prefers-color-scheme: light) {
-  html {
-    --darkmode: 0;
-  }
-}
-
-html:has(#color-scheme-light:checked) {
-  --darkmode: 0;
-}
-html:has(#color-scheme-dark:checked) {
-  --darkmode: 1;
-}
-
-@container root style(--darkmode: 1) {
-  body {
-    --background-color: #111010;
-    --text-color: hsl(228, 5%, 80%);
-    --backdrop: rgba(34 80 149 / 0.08);
-    --mondrian-yellow: #fac901;
-    --mondrian-red: #f43e3e;
-    --mondrian-red-pale: rgb(221, 1, 0, 0.3);
-    --mondrian-blue: #5790e5;
-    --secondary-background: #242424;
-    --card-shadow: 4px 5px 15px 3px rgba(17, 43, 82, 0.445);
-  }
-}
-
-.toggle-container {
-  position: absolute;
-  top: 10px;
-  right: 1rem;
-  font-size: 12px;
-}
-.toggle-group {
-  border: 1px solid #ccc;
-  border-radius: 24px;
-  inline-size: fit-content;
-  padding: 3px;
-}
-.toggle-group label {
-  border-radius: 21px;
-  cursor: pointer;
-  display: inline-flex;
-  padding: 0.5em 1em;
-  text-align: center;
-  user-select: none;
-}
-.toggle-group label:has(input:checked) {
-  background-color: #ccc;
-  color: #333;
-}
-
-[data-sr] {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  max-width: 120rem;
 }
 
 /*-------------------- typography -------------------*/
-h1,
-h2 {
-  font-family: "Raleway", sans-serif;
-}
+h1, h2 { font-family: 'Raleway', sans-serif; }
 
-h3 {
-  font-family: "Outfit", sans-serif;
-}
+h3 { font-family: 'Outfit', sans-serif; }
 
 p a:link {
   text-decoration: none;
   color: var(--mondrian-red);
 }
 
-p a:visited {
-  color: var(--mondrian-yellow);
+p a:visited { color:var(--mondrian-yellow); }
+
+p a:hover { color: var(--mondrian-blue); }
+
+p a:active { color: var(--mondrian-black); } 
+
+#theme-switcher {
+  position: absolute;
+  width: 40px;
+  top: 1.25rem;
+  right: 1rem;
 }
 
-p a:hover {
-  color: var(--mondrian-blue);
-}
-
-p a:active {
-  color: var(--mondrian-black);
-}
+#theme-switcher:hover { cursor: pointer; }
 
 /*-------------------- nav styles --------------------*/
 nav {
@@ -163,31 +106,71 @@ nav li a {
   transition: 0.3s;
 }
 
+#dc-logo {
+  display: none;
+}
+
+#nav-container {
+  background-color: var(--card-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+}
+
+/* .navbar-toggle is div holding hamburger icon, not icon itself */
+.navbar-toggle {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  margin-left: auto;
+  cursor: pointer;
+  color: var(--navbar-toggle);
+  width: 30px;
+  height: 0px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  font-size: 2rem;
+}
+
+.navbar-toggle:hover {
+  color: var(--mondrian-blue);
+  border-radius: 0;
+}
+
+#toggler-span {
+  height: 20px;
+  width: 20px
+}
+
+.fa-bars { transition: transform .3s ease-in; }
+
+.fa-bars:hover { transform: rotate(-90deg); }
+
+
+
 /*--------------- header styles ---------------*/
+/*---- (box with name, title and picture) -----*/
 header {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1400px;
 }
 
 .propic {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: solid 1px rgba(249, 249, 249, 0.125);
-  background-color: var(--secondary-background);
-  padding: 0.5rem;
-  margin: 0.4em;
-}
-
-.banner-container {
-  margin: 0 auto;
+  border: solid 1px rgba(249, 249, 249, .125);
+  background-color: var(--mondrian-white);
+  padding: .5rem;
+  margin: .4em;
 }
 
 .center {
-  margin: 0 0.5em 0.5em 0.5em;
+  margin: .5em;
   padding: 0 1em;
-  background-color: var(--backdrop);
-  max-width: 725px;
+  background-color: var(--name-backdrop);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,58 +178,75 @@ header {
 }
 
 /* --------- main --------- */
-.max-seven {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.125rem;
-}
 
 /*-------- footer styles -------*/
-#footer {
-  position: relative;
+#footer { 
+  position: relative; 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1.125rem 0 1.25rem 0;
+  margin: 2rem 0 1.25rem 0;
   height: 4rem;
 }
 
-#footer .social {
-  margin-bottom: 0.5em;
-}
+.social { margin-bottom: .5em; }
 
-.social a {
-  color: var(--background-color);
-}
+.social a { color: var(--background-color) }
 
-.social a:hover {
-  color: var(--background-color);
-}
+.social a:hover { color: var(--background-color) }
 
-#footer .social i {
+#footer .social i { 
   color: var(--mondrian-blue);
-  margin: 0 40px;
+  margin: 0 20px;
 }
 
-#footer .social i:hover {
-  color: var(--mondrian-yellow);
-}
+.social i:hover {  color: var(--mondrian-yellow); }
 
-#footer .social i:active {
-  color: var(--mondrian-red);
-}
+.social i:active { color: var(--mondrian-red); }
 
 /*-------------------- media queries --------------------*/
 /* 640 px */
 @media screen and (min-width: 40em) {
-  .center {
-    margin: 0 2em 0 2em;
+  .center { margin: 0 2em 0 2em; }
+  .navbar { 
+    display: flex; 
+    padding: .5em 0; 
   }
-  .navbar-toggler {
-    margin-right: 1em;
+  .navbar-toggle { display: none; }
+  .nav-items {
+    visibility: visible;
+    display: flex;
+    width: 100%;
+    /* height: 60px; */
   }
-  .navbar-brand {
-    margin-left: 1em;
+
+  .nav-items li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-items li a { 
+    letter-spacing: 0.08rem; 
+    padding: 1em;
+  }
+
+  #theme-switcher {
+    position: absolute;
+    width: 40px;
+    top: 36px;
+    right: 2em;
+  }
+
+  #nav-container {
+    height: 4rem;
+  }
+
+  #dc-logo {
+    display: block;
+  }
+
+  #inner-container {
+    max-width: 40rem;
   }
 }
