@@ -3,18 +3,18 @@
   --mondrian-red: #dd0100;
   --mondrian-red-pale: rgb(221, 1, 0, .3);
   --mondrian-blue: #225095;
-  --mondrian-white: #f9f9f9;
+  --pro-pic-border: #f9f9f9;
   --mondrian-black: #30303a;
 }
 
 .dark {
   --background-color: #292929;
   --text-color: #fff;
-  --name-backdrop: rgb(6, 0, 59);
+  --name-backdrop: #1f1f1f ;
   --mondrian-blue: #72a7f6;
   --navbar-toggle: #f9f9f9;
   --mondrian-red: #ff1e1e;
-  --mondrian-white: #225095;
+  --pro-pic-border: #292929;
   --card-background: rgb(83, 82, 82);
   --card-shadow: 4px 5px 15px 3px rgba(1, 16, 36, 0.87);
 }
@@ -63,6 +63,16 @@ p a:active { color: var(--mondrian-black); }
 #theme-switcher:hover { cursor: pointer; }
 
 /*-------------------- nav styles --------------------*/
+
+#nav-container {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  max-width: 87.5rem;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -110,14 +120,6 @@ nav li a {
   display: none;
 }
 
-#nav-container {
-  background-color: var(--card-background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40px;
-}
-
 /* .navbar-toggle is div holding hamburger icon, not icon itself */
 .navbar-toggle {
   position: absolute;
@@ -154,7 +156,7 @@ nav li a {
 /*---- (box with name, title and picture) -----*/
 header {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 87.5rem;
 }
 
 .propic {
@@ -162,7 +164,7 @@ header {
   height: 100px;
   border-radius: 50%;
   border: solid 1px rgba(249, 249, 249, .125);
-  background-color: var(--mondrian-white);
+  background-color: var(--pro-pic-border);
   padding: .5rem;
   margin: .4em;
 }

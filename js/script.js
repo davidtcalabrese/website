@@ -23,7 +23,6 @@
 
 // darkmode logic
 let btn = document.querySelector("#theme-switcher");
-console.log("Butn: " + btn);
 
 const currentTheme = localStorage.getItem("theme");
 
