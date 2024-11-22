@@ -62,10 +62,6 @@ main {
   color: var(--mondrian-blue);
 }
 
-.experience {
-  margin-bottom: 4em;
-}
-
 .job-title,
 .degree-title {
   font-weight: 600;
@@ -124,7 +120,7 @@ p.employer {
 .download-btn:hover,
 .download-btn:focus {
   background-color: var(--mondrian-pale-yellow);
-  color: #000000;
+  color: var(--text-color);
 }
 
 .download-btn:focus {

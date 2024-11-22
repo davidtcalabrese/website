@@ -8,10 +8,6 @@
 }
 
 /*-------------------- card styles --------------------*/
-.cards {
-  padding-bottom: 2rem;
-}
-
 .card {
   background: var(--secondary-background);
   margin-bottom: 2em;
