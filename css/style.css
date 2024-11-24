@@ -1,16 +1,17 @@
 :root {
   --mondrian-yellow: #fac901;
   --mondrian-red: #dd0100;
-  --mondrian-red-pale: rgb(221, 1, 0, .3);
+  --mondrian-red-pale: rgb(221, 1, 0, 0.3);
   --mondrian-blue: #225095;
   --pro-pic-border: #f9f9f9;
   --mondrian-black: #30303a;
+  --navbar-toggle: #30303a;
 }
 
 .dark {
   --background-color: #292929;
   --text-color: #fff;
-  --name-backdrop: #1f1f1f ;
+  --name-backdrop: #1f1f1f;
   --mondrian-blue: #72a7f6;
   --navbar-toggle: #f9f9f9;
   --mondrian-red: #ff1e1e;
@@ -19,15 +20,17 @@
   --card-shadow: 4px 5px 15px 3px rgba(1, 16, 36, 0.87);
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   --mondrian-red: #dd0100;
   --background-color: #f9f9f9;
   --text-color: #000;
-  --name-backdrop: rgba(34 80 149 / .08);
+  --name-backdrop: rgba(34 80 149 / 0.08);
   --mondrian-blue: #225095;
-  --navbar-toggle: rgba(0 0 0 / 0.7);
+  /* --navbar-toggle: rgba(0 0 0 / 0.7); */
   --card-background: #f9f9f9;
   --card-shadow: 4px 5px 15px 3px rgba(17, 43, 82, 0.445);
   background-color: var(--background-color);
@@ -38,20 +41,31 @@ body {
 }
 
 /*-------------------- typography -------------------*/
-h1, h2 { font-family: 'Raleway', sans-serif; }
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+}
 
-h3 { font-family: 'Outfit', sans-serif; }
+h3 {
+  font-family: "Outfit", sans-serif;
+}
 
 p a:link {
   text-decoration: none;
   color: var(--mondrian-red);
 }
 
-p a:visited { color:var(--mondrian-yellow); }
+p a:visited {
+  color: var(--mondrian-yellow);
+}
 
-p a:hover { color: var(--mondrian-blue); }
+p a:hover {
+  color: var(--mondrian-blue);
+}
 
-p a:active { color: var(--mondrian-black); } 
+p a:active {
+  color: var(--mondrian-black);
+}
 
 #theme-switcher {
   position: absolute;
@@ -60,7 +74,9 @@ p a:active { color: var(--mondrian-black); }
   right: 1rem;
 }
 
-#theme-switcher:hover { cursor: pointer; }
+#theme-switcher:hover {
+  cursor: pointer;
+}
 
 /*-------------------- nav styles --------------------*/
 
@@ -143,14 +159,18 @@ nav li a {
 
 #toggler-span {
   height: 30px;
-  width: 20px
+  width: 20px;
+  color: var(--navbar-toggle);
+  color: pink !important;
 }
 
-.fa-bars { transition: transform .3s ease-in; }
+.fa-bars {
+  transition: transform 0.3s ease-in;
+}
 
-.fa-bars:hover { transform: rotate(-90deg); }
-
-
+.fa-bars:hover {
+  transform: rotate(-90deg);
+}
 
 /*--------------- header styles ---------------*/
 /*---- (box with name, title and picture) -----*/
@@ -163,14 +183,14 @@ header {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: solid 1px rgba(249, 249, 249, .125);
+  border: solid 1px rgba(249, 249, 249, 0.125);
   background-color: var(--pro-pic-border);
-  padding: .5rem;
-  margin: .4em;
+  padding: 0.5rem;
+  margin: 0.4em;
 }
 
 .center {
-  margin: .5em;
+  margin: 0.5em;
   padding: 0 1em;
   background-color: var(--name-backdrop);
   display: flex;
@@ -182,8 +202,8 @@ header {
 /* --------- main --------- */
 
 /*-------- footer styles -------*/
-#footer { 
-  position: relative; 
+#footer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,13 +211,19 @@ header {
   height: 4rem;
 }
 
-.social { margin-bottom: .5em; }
+.social {
+  margin-bottom: 0.5em;
+}
 
-.social a { color: var(--background-color) }
+.social a {
+  color: var(--background-color);
+}
 
-.social a:hover { color: var(--background-color) }
+.social a:hover {
+  color: var(--background-color);
+}
 
-#footer .social i { 
+#footer .social i {
   color: var(--mondrian-blue);
   margin: 0 20px;
 }
@@ -207,18 +233,26 @@ header {
   transition: color 0.3s ease; /* Optional: Add smooth color transition */
 }
 
-#footer .social i:hover {  color: var(--mondrian-yellow); }
-#footer .social i:active { color: var(--mondrian-red); }
+#footer .social i:hover {
+  color: var(--mondrian-yellow);
+}
+#footer .social i:active {
+  color: var(--mondrian-red);
+}
 
 /*-------------------- media queries --------------------*/
 /* 640 px */
 @media screen and (min-width: 40em) {
-  .center { margin: 0 2em 0 2em; }
-  .navbar { 
-    display: flex; 
-    padding: .5em 0; 
+  .center {
+    margin: 0 2em 0 2em;
   }
-  .navbar-toggle { display: none; }
+  .navbar {
+    display: flex;
+    padding: 0.5em 0;
+  }
+  .navbar-toggle {
+    display: none;
+  }
   .nav-items {
     visibility: visible;
     display: flex;
@@ -231,8 +265,8 @@ header {
     justify-content: center;
   }
 
-  .nav-items li a { 
-    letter-spacing: 0.08rem; 
+  .nav-items li a {
+    letter-spacing: 0.08rem;
     padding: 1em;
   }
 
