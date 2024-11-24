@@ -80,4 +80,12 @@ picture img {
     flex: 0 1 calc(33% - 1em);
     margin-bottom: 2em;
   }
+
+  picture img {
+    max-height: 15rem;
+  }
+
+  #city-sort-pic {
+    height: 15rem;
+  }
 }
