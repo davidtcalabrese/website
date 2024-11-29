@@ -1,5 +1,5 @@
 :root {
-  --mondrian-yellow: #fac901;
+  --mondrian-yellow: #b69100;
   --mondrian-red: #dd0100;
   --mondrian-red-pale: rgb(221, 1, 0, 0.3);
   --mondrian-blue: #225095;
@@ -9,6 +9,7 @@
 }
 
 .dark {
+  --mondrian-yellow: #fac901;
   --background-color: #292929;
   --text-color: #fff;
   --name-backdrop: #1f1f1f;
