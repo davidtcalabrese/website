@@ -6,58 +6,70 @@ Date: 08/28/2021         "") `"` DC  \  ((`"`
                         ___Y  ,    .'7 /|
                       (_,___/...-` (_/_/ -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal website of David Calabrese, software engineer." />
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- bootstrap js bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poly&family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-    <!-- font awesome icons -->
-    <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
-    <link rel="alternate icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <title>David Calabrese | Software Engineer</title>
-  </head>
 
-  <body>
-    <header>
-      <nav include-html="includes/navigation.html"></nav>
-      <img src="img/sun-moon.png" alt="sun and moon" id="theme-switcher">
-    </header>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJCMYXJLBG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <main class="container">
+    gtag('config', 'G-BJCMYXJLBG');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of David Calabrese, software engineer." />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- bootstrap js bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poly&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="alternate icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <title>David Calabrese | Software Engineer</title>
+</head>
 
-      <div class="introduction max-seven">
-        <h3>Get in touch!</h3>
-        <p>Looking for a developer? Want to play a game of basketball? Just want to chat? Submit the form and I'll get back to you ASAP.</p>
-      </div>
+<body>
+  <header>
+    <nav include-html="includes/navigation.html"></nav>
+    <img src="img/sun-moon.png" alt="sun and moon" id="theme-switcher">
+  </header>
 
-        <div class="contact-form">
-            <form action="https://formspree.io/f/mbjqwnne"
-                  method="POST"
-                  name="EmailForm">   
-                <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-                <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                <textarea name="message" class="feedback-input" placeholder="Comment"></textarea>
-                <input type="submit" value="SUBMIT" id="submit-contact"/>
-              </form>
-        </div>
+  <main class="container">
 
-    </main>
+    <div class="introduction max-seven">
+      <h3>Get in touch!</h3>
+      <p>Looking for a developer? Want to play a game of basketball? Just want to chat? Submit the form and I'll get
+        back to you ASAP.</p>
+    </div>
 
-    <footer include-html="includes/footer.html"></footer>
-    <script src="js/includeHTML.js"></script>
-    <script>includeHTML();</script>
-    <script src="js/script.js"></script>
-  </body>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mbjqwnne" method="POST" name="EmailForm">
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+        <textarea name="message" class="feedback-input" placeholder="Comment"></textarea>
+        <input type="submit" value="SUBMIT" id="submit-contact" />
+      </form>
+    </div>
+
+  </main>
+
+  <footer include-html="includes/footer.html"></footer>
+  <script src="js/includeHTML.js"></script>
+  <script>includeHTML();</script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
-
-
