@@ -1,0 +1,28 @@
+.card {
+    background: var(--card-background)
+}
+
+.article-preview {
+    margin: 1rem;
+}
+
+.citation-needed {
+    display: inline-block;
+    vertical-align: super;
+    font-size: 75%;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--mondrian-blue);
+}
+
+.citation-needed::before {
+    content: "[citation needed]";
+}
+
+.citation-needed:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: var(--mondrian-blue);
+}
