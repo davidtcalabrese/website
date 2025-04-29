@@ -2,6 +2,10 @@
     background: var(--card-background)
 }
 
+.card:hover {
+    background: var(--card-background-hover)
+}
+
 .article-preview {
     margin: 1rem;
 }
