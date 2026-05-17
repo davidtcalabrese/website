@@ -241,6 +241,10 @@ header {
   color: var(--mondrian-red);
 }
 
+.hidden {
+  display: none;
+}
+
 /*-------------------- media queries --------------------*/
 /* 640 px */
 @media screen and (min-width: 40em) {
