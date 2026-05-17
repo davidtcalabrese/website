@@ -9,8 +9,12 @@
 
 /*-------------------- card styles --------------------*/
 .card {
-  background: var(--secondary-background);
+  background: var(--card-background);
   margin-bottom: 2em;
+}
+
+.card:hover {
+  background: var(--card-background-hover);
 }
 
 .card a {
