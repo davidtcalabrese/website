@@ -2,12 +2,10 @@ body {
   height: 100vh;
 }
 
-main {
+.introduction {
   margin: 1rem 0;
   padding: 0.5rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 40rem;
 }
 
 .large-text h3 {
@@ -18,7 +16,6 @@ main {
 .large-text p {
   font-size: 1.25rem;
   text-align: start;
-  font-family: "Raleway", sans-serif;
 }
 
 #footer {

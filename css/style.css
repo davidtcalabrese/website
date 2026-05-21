@@ -6,6 +6,8 @@
   --pro-pic-border: #f9f9f9;
   --mondrian-black: #30303a;
   --navbar-toggle: #30303a;
+  --link: #0000EE;
+  --link-visited: #551A8B;
 }
 
 .dark {
@@ -23,6 +25,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body {
@@ -37,31 +40,20 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   position: relative;
-  font-family: Helvetica, Arial, sans-serif;
   max-width: 120rem;
 }
 
 /*-------------------- typography -------------------*/
-h1,
-h2 {
-  font-family: "Raleway", sans-serif;
-}
-
-h3 {
-  font-family: "Outfit", sans-serif;
-}
-
 p a:link {
-  text-decoration: none;
-  color: var(--mondrian-red);
+  color: var(--link);
 }
 
 p a:visited {
-  color: var(--mondrian-yellow);
+  color: var(--link-visited);
 }
 
 p a:hover {
-  color: var(--mondrian-blue);
+  text-decoration: none;
 }
 
 p a:active {
@@ -77,6 +69,12 @@ p a:active {
 
 #theme-switcher:hover {
   cursor: pointer;
+}
+
+#h1-container {
+  display: flex;
+
+  padding: 2rem;
 }
 
 /*-------------------- nav styles --------------------*/
@@ -119,11 +117,15 @@ nav li a {
   display: block;
   padding: 16px;
   text-decoration: none;
-  color: var(--mondrian-blue);
+  color: var(--mondrian-black);
 }
 
 #nav li a {
-  color: var(--mondrian-blue);
+  color: var(--mondrian-black);
+}
+
+main a {
+  color: var(--mondrian-black);
 }
 
 #nav li a:hover {
@@ -200,6 +202,11 @@ header {
   flex-direction: column;
 }
 
+#h1-name {
+  padding: 0.75rem 0 0.25rem 0;
+  text-align: start;
+}
+
 /* --------- main --------- */
 
 /*-------- footer styles -------*/
@@ -273,13 +280,6 @@ header {
   .nav-items li a {
     letter-spacing: 0.08rem;
     padding: 1em;
-  }
-
-  #theme-switcher {
-    position: absolute;
-    width: 40px;
-    top: 36px;
-    right: 2em;
   }
 
   #nav-container {
