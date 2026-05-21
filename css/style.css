@@ -40,20 +40,10 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   position: relative;
-  font-family: Helvetica, Arial, sans-serif;
   max-width: 120rem;
 }
 
 /*-------------------- typography -------------------*/
-h1,
-h2 {
-  font-family: "Raleway", sans-serif;
-}
-
-h3 {
-  font-family: "Outfit", sans-serif;
-}
-
 p a:link {
   color: var(--link);
 }
