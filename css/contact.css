@@ -5,28 +5,22 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  max-width: 30rem;
 }
 
 .introduction h3 {
   text-align: center;
 }
 .introduction p {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
-
 .contact-form {
   max-width: 420px;
   margin: 2rem auto;
 }
 
-.introduction {
-  margin-top: 1.5rem;
-}
 
-.introduction h3 {
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-}
 
 .feedback-input {
   color: var(--text-color);
@@ -36,17 +30,17 @@
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border: 1px solid var(--mondrian-yellow);
+  border: 1px solid gray;
   transition: all 0.3s;
   padding: 13px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
 }
 
 .feedback-input:focus {
-  border: 1px solid var(--mondrian-red-pale);
+  border: 1.5px solid #191919;
 }
 
 textarea {
@@ -56,21 +50,38 @@ textarea {
   color: #000;
 }
 
-[type="submit"] {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  width: 100%;
-  background: var(--mondrian-red);
-  border-radius: 5px;
-  border: 0;
+#submit-contact {
+  /* Reset default button appearance */
+  background: transparent;
+  border: 1px solid currentColor;
+  outline: none;
   cursor: pointer;
-  color: white;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
+
+  /* Typography */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: currentColor;
+  width: 100%;
+  /* Spacing */
+  padding: 10px 25px;
+  letter-spacing: 1px;
+  display: inline-block;
+
+  /* Explicit color transitions */
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
-[type="submit"]:hover {
-  background: var(--mondrian-red-pale);
+
+/* Elegant explicit inversion */
+#submit-contact:hover,
+#submit-contact:focus {
+  background-color: black;
+  /* Change this to #ffffff if your site's main background is white */
+  color: white !important;
+}
+
+/* Click feedback */
+#submit-contact:active {
+  transform: translateY(1px);
 }
